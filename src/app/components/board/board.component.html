@@ -1,0 +1,9 @@
+<div class="tocContainer">
+  <app-toc (click)="makeMove(i)" [turn]="n" *ngFor="let n of squares; let i = index"
+
+  >
+</app-toc>
+<div class="winner" *ngIf="winner">
+  <h1>Felicidades Gano el jugador {{winnerPlayer()}}</h1>
+</div>
+</div>

@@ -1,0 +1,19 @@
+.tocContainer{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 150px));
+  width: 100%;
+  place-content: center;
+  gap: 0px;
+}
+.winner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  z-index: 100;
+  display: grid;
+  place-content: center;
+  &:focus{
+    display: none;
+  }
+}

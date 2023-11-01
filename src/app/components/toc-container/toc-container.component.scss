@@ -1,0 +1,7 @@
+.tocContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  width: 100%;
+  place-content: center;
+  gap: 0px;
+}

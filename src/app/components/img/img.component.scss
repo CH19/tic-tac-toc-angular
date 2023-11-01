@@ -1,0 +1,12 @@
+@mixin heightWidth($size){
+  width: $size;
+  height: $size;
+}
+figure{
+  @include heightWidth($size: 200px);
+  img{
+    @include heightWidth($size: 100%);
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,11 @@
+<h1>Este es el {{text}}
+
+</h1>
+<figure  *ngIf="img; else elseimg">
+  <img (load)="loaded()" (error)="imgDefault()" [src]="img" alt="">
+</figure>
+<ng-template #elseimg>
+  <figure>
+    <img [src]="default" alt="">
+  </figure>
+</ng-template>
